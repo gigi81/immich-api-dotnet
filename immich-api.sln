@@ -1,0 +1,49 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB62EB28-9F72-43E2-98B8-021BE700B2D4}"
+	ProjectSection(SolutionItems) = preProject
+	src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Immich.Client", "src\Immich.Client\Immich.Client.csproj", "{89B01F39-B634-4E8F-81B6-09ED516CCFCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{77C49B20-9F37-4923-9A26-D54A9E558927}"
+	ProjectSection(SolutionItems) = preProject
+		tests\Directory.Build.props = tests\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Immich.Client.Tests", "tests\Immich.Client.Tests\Immich.Client.Tests.csproj", "{D28B2871-A164-4EBD-9203-926597BED204}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{68b1a45e-06c1-48c3-ba62-2d81108ba3b0}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89B01F39-B634-4E8F-81B6-09ED516CCFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89B01F39-B634-4E8F-81B6-09ED516CCFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89B01F39-B634-4E8F-81B6-09ED516CCFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89B01F39-B634-4E8F-81B6-09ED516CCFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D28B2871-A164-4EBD-9203-926597BED204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D28B2871-A164-4EBD-9203-926597BED204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D28B2871-A164-4EBD-9203-926597BED204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D28B2871-A164-4EBD-9203-926597BED204}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{89B01F39-B634-4E8F-81B6-09ED516CCFCA} = {CB62EB28-9F72-43E2-98B8-021BE700B2D4}
+		{D28B2871-A164-4EBD-9203-926597BED204} = {77C49B20-9F37-4923-9A26-D54A9E558927}
+	EndGlobalSection
+EndGlobal
