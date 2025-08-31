@@ -1,11 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
   <ItemGroup>
     <OpenApiReference Include="immich-openapi-specs.json" CodeGenerator="NSwagCSharp" Namespace="Immich.Client" ClassName="ImmichClient" Options="/GenerateOptionalPropertiesAsNullable:true /GenerateNullableReferenceTypes:true">
       <SourceUri>https://raw.githubusercontent.com/immich-app/immich/main/open-api/immich-openapi-specs.json</SourceUri>
@@ -14,11 +7,11 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="9.0.2">
+    <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="9.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="NSwag.ApiDescription.Client" Version="14.2.0">
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="14.5.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

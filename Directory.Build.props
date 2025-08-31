@@ -2,8 +2,11 @@
   <PropertyGroup>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
-  
+
   <PropertyGroup>
     <Authors></Authors>
     <Product></Product>
@@ -11,6 +14,7 @@
     <RepositoryUrl></RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
-    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageLicenseExpression>AGPL-3.0</PackageLicenseExpression>
+    <PackageLicenseUrl>https://github.com/immich-app/immich/blob/main/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 </Project>
