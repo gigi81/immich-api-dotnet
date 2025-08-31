@@ -30,8 +30,7 @@ jobs:
           curl -L https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml -o docker-compose.yml
           curl -L https://github.com/immich-app/immich/releases/latest/download/example.env -o example.env
       - name: Start Immich services
-        run: |
-          docker-compose -f docker-compose.yml up -d
+        uses: hoverkraft-tech/compose-action@v2.3.0
       - name: Run tests
         run: dotnet test --collect:"XPlat Code Coverage"  --logger "GitHubActions"
       - name: Upload coverage
