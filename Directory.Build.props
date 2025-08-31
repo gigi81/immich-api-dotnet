@@ -1,6 +1,8 @@
 <Project>
   <PropertyGroup>
     <AssemblyVersion>1.0.0</AssemblyVersion>
+    <!-- https://github.com/RicoSuter/NSwag/issues/3359 -->
+    <TargetFramework>net8.0</TargetFramework>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>

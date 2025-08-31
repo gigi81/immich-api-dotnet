@@ -1,9 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <!-- https://github.com/RicoSuter/NSwag/issues/3359 -->
-    <TargetFramework>net8.0</TargetFramework>
-  </PropertyGroup>
-
   <Target Name="DownloadOpenApiSpec" BeforeTargets="BeforeBuild">
     <DownloadFile
             SourceUrl="https://raw.githubusercontent.com/immich-app/immich/main/open-api/immich-openapi-specs.json"
