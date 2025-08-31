@@ -3,7 +3,15 @@
     <!-- https://github.com/RicoSuter/NSwag/issues/3359 -->
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
-  
+
+  <Target Name="DownloadOpenApiSpec" BeforeTargets="BeforeBuild">
+    <DownloadFile
+            SourceUrl="https://raw.githubusercontent.com/immich-app/immich/main/open-api/immich-openapi-specs.json"
+            DestinationFileName="immich-openapi-specs.json"
+            DestinationFolder="$(MSBuildProjectDirectory)"
+            SkipUnchangedFiles="true" />
+  </Target>
+
   <ItemGroup>
     <OpenApiReference Include="immich-openapi-specs.json"
                       CodeGenerator="NSwagCSharp"
