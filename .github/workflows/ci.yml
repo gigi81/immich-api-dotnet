@@ -28,15 +28,9 @@ jobs:
       - name: Download Immich docker-compose.yml
         run: |
           curl -L https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml -o docker-compose.yml
+          curl -L https://github.com/immich-app/immich/releases/latest/download/example.env -o .env
       - name: Start Immich services
         uses: hoverkraft-tech/compose-action@v2.3.0
-        env:
-          UPLOAD_LOCATION: ./library
-          DB_DATA_LOCATION: ./postgres
-          IMMICH_VERSION: release
-          DB_DATABASE_NAME: immich
-          DB_USERNAME: postgres
-          DB_PASSWORD: postgres          
       - name: Run tests
         run: dotnet test --collect:"XPlat Code Coverage"  --logger "GitHubActions"
       - name: Upload coverage
