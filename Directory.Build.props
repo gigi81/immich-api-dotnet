@@ -13,8 +13,7 @@
     <RepositoryUrl>https://github.com/gigi81/immich-api-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
-    <PackageLicenseExpression>AGPL-3.0</PackageLicenseExpression>
-    <PackageLicenseUrl>https://github.com/immich-app/immich/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
