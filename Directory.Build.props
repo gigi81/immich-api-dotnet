@@ -7,13 +7,20 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Authors></Authors>
-    <Product></Product>
-	<PackageProjectUrl></PackageProjectUrl>
-    <RepositoryUrl></RepositoryUrl>
+    <Authors>Luigi Grilli</Authors>
+    <Product>Immich API Client for .NET</Product>
+	<PackageProjectUrl>https://github.com/gigi81/immich-api-dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/gigi81/immich-api-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
     <PackageLicenseExpression>AGPL-3.0</PackageLicenseExpression>
     <PackageLicenseUrl>https://github.com/immich-app/immich/blob/main/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>
